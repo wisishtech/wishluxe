@@ -1,0 +1,329 @@
+/* 
+ * WISHLUXE Fashion House Website
+ * About Us Page Stylesheet
+ * 
+ * This stylesheet contains styles specific to the about us page of the WISHLUXE website.
+ */
+
+/* ---------- TEAM INTRO STYLES ---------- */
+.team-intro {
+    padding: var(--spacing-xl) var(--spacing-lg);
+    background-color: var(--light-bg);
+    text-align: center;
+}
+
+.team-intro-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* ---------- BOARD SECTION STYLES ---------- */
+.board-section {
+    padding: var(--spacing-xl) var(--spacing-lg);
+}
+
+.board-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--spacing-xl);
+}
+
+.board-member {
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.board-member:hover {
+    transform: translateY(-10px);
+}
+
+.member-image {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: var(--spacing-md);
+    border-radius: 10px;
+    box-shadow: var(--shadow-sm);
+}
+
+.member-image img {
+    transition: transform 0.5s ease;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.board-member:hover .member-image img {
+    transform: scale(1.05);
+}
+
+.social-icons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-md);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.member-image:hover .social-icons {
+    opacity: 1;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+.member-info h3 {
+    margin-bottom: var(--spacing-xs);
+}
+
+.member-title {
+    color: var(--accent-color);
+    font-size: 0.9rem;
+    margin-bottom: var(--spacing-md);
+    font-style: italic;
+}
+
+.member-bio {
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+/* ---------- CREATIVE TEAMS SECTION ---------- */
+.creative-teams-section {
+    padding: var(--spacing-xl) var(--spacing-lg);
+    background-color: var(--light-bg);
+}
+
+.teams-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--spacing-xl);
+}
+
+.team-category-title {
+    margin-bottom: var(--spacing-lg);
+    position: relative;
+    padding-bottom: var(--spacing-sm);
+    color: var(--primary-color);
+}
+
+.team-category-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: var(--secondary-color);
+}
+
+.team-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.team-member {
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.team-member img {
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    margin: 0 auto var(--spacing-sm);
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 3px solid transparent;
+}
+
+.team-member:hover img {
+    transform: scale(1.05);
+    border-color: var(--secondary-color);
+}
+
+.team-member-info h4 {
+    margin-bottom: var(--spacing-xs);
+    font-size: 1rem;
+}
+
+.team-member-info p {
+    font-size: 0.8rem;
+    color: var(--accent-color);
+    margin-bottom: 0;
+}
+
+/* ---------- VALUES SECTION STYLES ---------- */
+.values-section {
+    padding: var(--spacing-xl) var(--spacing-lg);
+    background-image: url('../images/about.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.values-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.values-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    color: var(--light-text);
+}
+
+.values-content h2 {
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-xl);
+    font-size: 2.5rem;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-xl);
+}
+
+.value-item {
+    padding: var(--spacing-lg);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.value-item.animate {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.value-item:hover {
+    transform: translateY(-10px);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.value-icon {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-md);
+}
+
+.value-item h3 {
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+/* ---------- JOIN OUR TEAM SECTION ---------- */
+.join-team-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+    align-items: center;
+    padding: var(--spacing-xl) var(--spacing-lg);
+    background-color: var(--light-bg);
+}
+
+.join-team-content {
+    padding: var(--spacing-lg);
+}
+
+.join-team-content h2 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-md);
+}
+
+.join-team-content p {
+    margin-bottom: var(--spacing-lg);
+    line-height: 1.7;
+}
+
+.join-team-image {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: var(--shadow-md);
+}
+
+.join-team-image img {
+    transition: transform 0.5s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.join-team-section:hover .join-team-image img {
+    transform: scale(1.05);
+}
+
+/* Responsive styles for about page */
+@media (max-width: 1024px) {
+    .values-grid, .join-team-section {
+        grid-template-columns: 1fr;
+    }
+    
+    .join-team-image {
+        order: -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .team-members {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+    
+    .team-member img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .teams-grid, .board-members {
+        grid-template-columns: 1fr;
+    }
+    
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+}

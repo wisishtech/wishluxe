@@ -1,0 +1,402 @@
+/* 
+ * WISHLUXE Fashion House Website
+ * Contact Page Stylesheet
+ * 
+ * This stylesheet contains styles specific to the contact page of the WISHLUXE website.
+ */
+
+/* ---------- CONTACT SECTION STYLES ---------- */
+.contact-section {
+    padding: var(--spacing-xl) var(--spacing-lg);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: var(--spacing-xl);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-form-container {
+    padding: var(--spacing-lg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    background-color: var(--bg-color);
+}
+
+.contact-form-container h2 {
+    margin-bottom: var(--spacing-lg);
+    color: var(--primary-color);
+    position: relative;
+    padding-bottom: var(--spacing-sm);
+}
+
+.contact-form-container h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: var(--secondary-color);
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-md);
+}
+
+.form-group {
+    margin-bottom: var(--spacing-md);
+}
+
+.form-group:nth-child(3),
+.form-group:nth-child(4),
+.form-group:nth-child(5) {
+    grid-column: span 2;
+}
+
+.form-group:nth-child(6),
+.form-group:nth-child(7) {
+    margin-bottom: var(--spacing-sm);
+}
+
+.form-success {
+    text-align: center;
+    padding: var(--spacing-xl) 0;
+}
+
+.form-success i {
+    font-size: 3rem;
+    color: var(--success-color);
+    margin-bottom: var(--spacing-md);
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+}
+
+.info-section {
+    padding: var(--spacing-lg);
+    border: 1px solid var(--border-color);
+    background-color: var(--light-bg);
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-section:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.info-section h3 {
+    margin-bottom: var(--spacing-md);
+    color: var(--primary-color);
+    position: relative;
+    padding-bottom: var(--spacing-sm);
+}
+
+.info-section h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: var(--secondary-color);
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.contact-details li {
+    display: flex;
+    align-items: flex-start;
+}
+
+.contact-details li i {
+    min-width: 30px;
+    margin-top: 5px;
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+}
+
+.contact-details li div {
+    flex-grow: 1;
+}
+
+.contact-details li h4 {
+    margin-bottom: var(--spacing-xs);
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+
+.contact-details li p {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+}
+
+.social-media-large {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+}
+
+.social-icon-large {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.social-icon-large:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-5px);
+    color: var(--primary-color);
+}
+
+/* ---------- MAP SECTION STYLES ---------- */
+.map-section {
+    padding: var(--spacing-xl) var(--spacing-lg);
+    background-color: var(--light-bg);
+}
+
+.map-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.map-placeholder {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: var(--shadow-md);
+    height: 400px;
+}
+
+.map-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.map-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: var(--spacing-md) var(--spacing-lg);
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: var(--shadow-md);
+}
+
+.map-overlay i {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+/* ---------- CAREERS SECTION STYLES ---------- */
+.careers-section {
+    padding: var(--spacing-xl) var(--spacing-lg);
+    background-color: var(--bg-color);
+}
+
+.careers-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.careers-content h2 {
+    margin-bottom: var(--spacing-md);
+    color: var(--primary-color);
+    position: relative;
+    padding-bottom: var(--spacing-sm);
+    display: inline-block;
+}
+
+.careers-content h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 2px;
+    background-color: var(--secondary-color);
+}
+
+.job-listings {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+    margin: var(--spacing-xl) 0;
+}
+
+.job-listing {
+    padding: var(--spacing-lg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.job-listing:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--secondary-color);
+}
+
+.job-location {
+    font-size: 0.9rem;
+    color: var(--accent-color);
+    margin-bottom: var(--spacing-md);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+
+.job-description {
+    font-size: 0.9rem;
+    margin-bottom: var(--spacing-md);
+    line-height: 1.6;
+}
+
+.careers-note {
+    font-style: italic;
+    font-size: 0.9rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* ---------- PRESS SECTION STYLES ---------- */
+.press-section {
+    padding: var(--spacing-xl) var(--spacing-lg);
+    background-color: var(--light-bg);
+}
+
+.press-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+    align-items: center;
+}
+
+.press-text h2 {
+    margin-bottom: var(--spacing-md);
+    color: var(--primary-color);
+    position: relative;
+    padding-bottom: var(--spacing-sm);
+}
+
+.press-text h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: var(--secondary-color);
+}
+
+.press-kit {
+    margin-top: var(--spacing-xl);
+    padding: var(--spacing-md);
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-color);
+    border-radius: 8px;
+}
+
+.press-kit h3 {
+    margin-bottom: var(--spacing-sm);
+    color: var(--primary-color);
+}
+
+.press-kit button {
+    margin-top: var(--spacing-md);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.press-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+}
+
+.press-images img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.press-images img:hover {
+    transform: scale(1.05);
+}
+
+/* Modal */
+.modal-content {
+    padding: 1rem;
+}
+
+/* Responsive styles for contact page */
+@media (max-width: 1024px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    .press-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .press-images {
+        order: -1;
+        margin-bottom: var(--spacing-lg);
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-form {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-group:nth-child(3),
+    .form-group:nth-child(4),
+    .form-group:nth-child(5) {
+        grid-column: span 1;
+    }
+    
+    .job-listings {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .press-images {
+        grid-template-columns: 1fr;
+    }
+}

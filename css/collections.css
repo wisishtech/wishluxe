@@ -1,0 +1,391 @@
+/* 
+ * WISHLUXE Fashion House Website
+ * Collections Page Stylesheet
+ * 
+ * This stylesheet contains styles specific to the collections page of the WISHLUXE website.
+ */
+
+/* ---------- COLLECTION FILTER STYLES ---------- */
+.collection-filter {
+    background-color: var(--light-bg);
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+}
+
+.filter-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-md);
+}
+
+.filter-btn {
+    padding: 0.5rem 1.25rem;
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: var(--body-font);
+    font-size: 0.9rem;
+    border-radius: 4px;
+}
+
+.filter-btn:hover, .filter-btn.active {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* ---------- COLLECTIONS SHOWCASE STYLES ---------- */
+.collections-showcase {
+    padding: 0 var(--spacing-lg);
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.collection-category {
+    margin-bottom: var(--spacing-xl);
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.collection-category.hidden {
+    display: none;
+    opacity: 0;
+}
+
+.category-title {
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 1px solid var(--border-color);
+    position: relative;
+}
+
+.category-title::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: var(--secondary-color);
+}
+
+/* ---------- PRODUCT GRID STYLES ---------- */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.product-item {
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.product-item:hover {
+    transform: translateY(-10px);
+}
+
+.product-image {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: var(--spacing-md);
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+}
+
+.product-image img {
+    transition: transform 0.5s ease;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.product-item:hover .product-image img {
+    transform: scale(1.05);
+}
+
+.product-actions {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: var(--spacing-md);
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover .product-actions {
+    transform: translateY(0);
+}
+
+.quick-view-btn {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-family: var(--body-font);
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.quick-view-btn:hover {
+    background-color: var(--light-text);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.product-info {
+    text-align: center;
+}
+
+.product-info h3 {
+    margin-bottom: var(--spacing-xs);
+    font-size: 1.1rem;
+}
+
+.product-description {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.5;
+}
+
+.product-price {
+    font-weight: 600;
+    color: var(--accent-color);
+    font-size: 1.1rem;
+}
+
+/* ---------- PRODUCT MODAL STYLES ---------- */
+.modal-product-details {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modal-product-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.modal-product-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.modal-product-info {
+    flex: 1;
+    min-width: 300px;
+    padding: var(--spacing-xl);
+}
+
+.modal-title {
+    margin-bottom: var(--spacing-sm);
+    color: var(--primary-color);
+}
+
+.modal-price {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    margin-bottom: var(--spacing-md);
+    font-weight: 600;
+}
+
+.modal-description {
+    margin-bottom: var(--spacing-lg);
+    line-height: 1.7;
+}
+
+.product-options {
+    margin-bottom: var(--spacing-lg);
+}
+
+.size-selection, .color-selection {
+    margin-bottom: var(--spacing-md);
+}
+
+.size-options, .color-options {
+    display: flex;
+    gap: var(--spacing-sm);
+    flex-wrap: wrap;
+}
+
+.size-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border-color);
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.size-btn:hover, .size-btn.selected {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    border-color: var(--primary-color);
+}
+
+.color-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.color-btn:hover, .color-btn.selected {
+    transform: scale(1.2);
+    box-shadow: 0 0 0 2px var(--secondary-color);
+}
+
+.modal-actions {
+    display: flex;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+}
+
+#add-to-wishlist {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+
+#add-to-wishlist i {
+    transition: transform 0.3s ease;
+}
+
+#add-to-wishlist:hover i {
+    transform: scale(1.2);
+}
+
+#add-to-wishlist.added {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+}
+
+/* ---------- SUSTAINABILITY SECTION STYLES ---------- */
+.sustainability {
+    background-color: var(--light-bg);
+    padding: var(--spacing-xl) var(--spacing-lg);
+    text-align: center;
+    background-image: url('../images/collection.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.sustainability::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.sustainability-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.sustainability-content h2 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-lg);
+    font-size: 2.2rem;
+}
+
+.sustainability-features {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-xl);
+    flex-wrap: wrap;
+    margin-top: var(--spacing-lg);
+}
+
+.feature {
+    max-width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+}
+
+.feature i {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-md);
+}
+
+.feature h3 {
+    margin-bottom: var(--spacing-sm);
+    color: var(--primary-color);
+}
+
+/* Responsive styles for collections page */
+@media (max-width: 1024px) {
+    .filter-container {
+        padding: 0 var(--spacing-md);
+    }
+    
+    .sustainability-features {
+        gap: var(--spacing-lg);
+    }
+}
+
+@media (max-width: 768px) {
+    .filter-buttons {
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding-bottom: var(--spacing-sm);
+        margin-left: -var(--spacing-md);
+        margin-right: -var(--spacing-md);
+        padding-left: var(--spacing-md);
+        padding-right: var(--spacing-md);
+    }
+    
+    .filter-btn {
+        flex-shrink: 0;
+    }
+    
+    .modal-product-details {
+        flex-direction: column;
+    }
+    
+    .modal-product-info {
+        padding: var(--spacing-lg) 0 0 0;
+    }
+    
+    .sustainability-features {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}

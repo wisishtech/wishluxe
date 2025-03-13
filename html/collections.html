@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WISHLUXE | Collections</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Page-specific CSS -->
+    <link rel="stylesheet" href="../css/collections.css">
+    <!-- Font Awesome for icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+</head>
+<body>
+        <!-- Modernized Header Section -->
+        <header role="banner">
+            <div class="header-container">
+                <a href="../index.html">
+                    <div class="logo" aria-label="WISHLUXE Home">
+                        <h1>WISH<span>LUXE</span></h1>
+                        <p class="tagline">Redefining Elegance</p>
+                    </div>
+                </a>
+                
+                <nav role="navigation" aria-label="Main navigation">
+                    <ul>
+                        <!-- <li><a href="../index.html">Home</a></li> -->
+                        <li><a href="collections.html" class="active">Collections</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <!-- Close icon for mobile menu -->
+                    <div class="close-icon">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </nav>
+                
+                <div class="header-right">
+                    <div class="search-container">
+                        <button class="search-toggle" aria-label="Search">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        <form class="search-form" id="event-subscribe-form" action="#" method="get">
+                            <input type="text" placeholder="Search..." aria-label="Search">
+                        </form>
+                    </div>
+                    
+                    <div class="header-icons">
+                        <a href="#" class="header-icon" aria-label="Wishlist">
+                            <i class="far fa-heart"></i>
+                        </a>
+                        <a href="#" class="header-icon" aria-label="Shopping bag">
+                            <i class="fas fa-shopping-bag"></i>
+                        </a>
+                        <a href="#" class="header-icon" aria-label="My account">
+                            <i class="far fa-user"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="hamburger-menu" aria-label="Toggle menu" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <!-- Overlay for mobile menu -->
+        <div class="overlay"></div>
+    <!-- Marquee Element -->
+    <div class="marquee-container">
+        <div class="marquee">
+            <span>UPCOMING: Spring Collection Launch - May 15th • Paris Fashion Week Showcase - June 3rd • Limited Edition Accessories - Now Available • VIP Member Exclusive Preview - April 28th</span>
+        </div>
+    </div>
+
+    <!-- Collections Hero Banner -->
+    <section class="page-banner">
+        <div class="banner-content">
+            <h1>Our Collections</h1>
+            <p>Discover the artistry of WISHLUXE through our diverse collections</p>
+        </div>
+    </section>
+
+    <!-- Collection Categories Filter -->
+    <section class="collection-filter">
+        <div class="filter-container">
+            <h2>Browse by Category</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Collections</button>
+                <button class="filter-btn" data-filter="ready-to-wear">Ready to Wear</button>
+                <button class="filter-btn" data-filter="couture">Couture</button>
+                <button class="filter-btn" data-filter="accessories">Accessories</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Collections Grid -->
+    <section class="collections-showcase">
+        <!-- Ready to Wear Collection -->
+        <div class="collection-category ready-to-wear">
+            <h2 class="category-title">Ready to Wear</h2>
+            <div class="product-grid">
+                <!-- Product Item 1 -->
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="../images/image-6.png" alt="Silk Palazzo Pants">
+                        <div class="product-actions">
+                            <button class="quick-view-btn" data-product="silk-palazzo">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Silk Palazzo Pants</h3>
+                        <p class="product-description">Fluid silhouette with wide-leg design in premium silk.</p>
+                        <p class="product-price">$850</p>
+                    </div>
+                </div>
+
+                <!-- Product Item 2 -->
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="../images/image-5.png" alt="Structured Blazer">
+                        <div class="product-actions">
+                            <button class="quick-view-btn" data-product="structured-blazer">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Structured Blazer</h3>
+                        <p class="product-description">Tailored wool blend with distinctive shoulder silhouette.</p>
+                        <p class="product-price">$1,200</p>
+                    </div>
+                </div>
+
+                <!-- Product Item 3 -->
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="../images/image-4.png" alt="Cashmere Sweater">
+                        <div class="product-actions">
+                            <button class="quick-view-btn" data-product="cashmere-sweater">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Cashmere Sweater</h3>
+                        <p class="product-description">Luxurious oversized cashmere with ribbed details.</p>
+                        <p class="product-price">$890</p>
+                    </div>
+                </div>
+
+                <!-- Product Item 4 -->
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="../images/image-3.png" alt="Pleated Midi Skirt">
+                        <div class="product-actions">
+                            <button class="quick-view-btn" data-product="pleated-skirt">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Pleated Midi Skirt</h3>
+                        <p class="product-description">Elegant pleated design in lightweight sustainable fabric.</p>
+                        <p class="product-price">$720</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Couture Collection -->
+        <div class="collection-category couture">
+            <h2 class="category-title">Couture</h2>
+            <div class="product-grid">
+                <!-- Product Item 5 -->
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="../images/image-2.png" alt="Embellished Evening Gown">
+                        <div class="product-actions">
+                            <button class="quick-view-btn" data-product="evening-gown">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Embellished Evening Gown</h3>
+                        <p class="product-description">Hand-beaded silk with dramatic train and draped back.</p>
+                        <p class="product-price">$5,800</p>
+                    </div>
+                </div>
+
+                <!-- Product Item 6 -->
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="../images/image-1.png" alt="Sculptural Cocktail Dress">
+                        <div class="product-actions">
+                            <button class="quick-view-btn" data-product="cocktail-dress">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Sculptural Cocktail Dress</h3>
+                        <p class="product-description">Architectural silhouette with precision craftsmanship.</p>
+                        <p class="product-price">$3,200</p>
+                    </div>
+                </div>
+
+                <!-- Product Item 7 -->
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="../images/me-5.png" alt="Custom Bridal Ensemble">
+                        <div class="product-actions">
+                            <button class="quick-view-btn" data-product="bridal">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Custom Bridal Ensemble</h3>
+                        <p class="product-description">Bespoke bridal creation with hand-embroidered details.</p>
+                        <p class="product-price">Price Upon Request</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Accessories Collection -->
+        <div class="collection-category accessories">
+            <h2 class="category-title">Accessories</h2>
+            <div class="product-grid">
+                <!-- Product Item 8 -->
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="../images/image-3.png" alt="Leather Tote Bag">
+                        <div class="product-actions">
+                            <button class="quick-view-btn" data-product="leather-tote">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Leather Tote Bag</h3>
+                        <p class="product-description">Structured leather tote with signature hardware.</p>
+                        <p class="product-price">$1,450</p>
+                    </div>
+                </div>
+
+                <!-- Product Item 9 -->
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="../images/image-5.png" alt="Silk Scarf">
+                        <div class="product-actions">
+                            <button class="quick-view-btn" data-product="silk-scarf">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Silk Scarf</h3>
+                        <p class="product-description">Hand-printed silk with artist collaboration motif.</p>
+                        <p class="product-price">$380</p>
+                    </div>
+                </div>
+
+                <!-- Product Item 10 -->
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="../images/image-2.png" alt="Statement Earrings">
+                        <div class="product-actions">
+                            <button class="quick-view-btn" data-product="statement-earrings">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Statement Earrings</h3>
+                        <p class="product-description">Artisan-crafted metal with semi-precious stones.</p>
+                        <p class="product-price">$520</p>
+                    </div>
+                </div>
+
+                <!-- Product Item 11 -->
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="../images/me-4.png" alt="Leather Belt">
+                        <div class="product-actions">
+                            <button class="quick-view-btn" data-product="leather-belt">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Leather Belt</h3>
+                        <p class="product-description">Italian calfskin with distinctive buckle detail.</p>
+                        <p class="product-price">$490</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick View Modal -->
+    <div id="quick-view-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-product-details">
+                <div class="modal-product-image">
+                    <img id="modal-image" src="../images/image-4.png" alt="Product Image">
+                </div>
+                <div class="modal-product-info">
+                    <h2 id="modal-title">Product Title</h2>
+                    <p id="modal-price" class="modal-price">$0.00</p>
+                    <p id="modal-description" class="modal-description">Product description will appear here.</p>
+                    <div class="product-options">
+                        <div class="size-selection">
+                            <h3>Size</h3>
+                            <div class="size-options">
+                                <button class="size-btn">XS</button>
+                                <button class="size-btn">S</button>
+                                <button class="size-btn">M</button>
+                                <button class="size-btn">L</button>
+                                <button class="size-btn">XL</button>
+                            </div>
+                        </div>
+                        <div class="color-selection">
+                            <h3>Color</h3>
+                            <div class="color-options">
+                                <button class="color-btn" style="background-color: #000;"></button>
+                                <button class="color-btn" style="background-color: #f5f5dc;"></button>
+                                <button class="color-btn" style="background-color: #8b4513;"></button>
+                                <button class="color-btn" style="background-color: #708090;"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-actions">
+                        <button class="btn" id="add-to-wishlist"><i class="far fa-heart"></i> Add to Wishlist</button>
+                        <button class="btn primary" id="request-info">Request Information</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sustainability Section -->
+    <section class="sustainability">
+        <div class="sustainability-content">
+            <h2>Our Commitment to Sustainability</h2>
+            <p>At WISHLUXE, sustainability is not just a trend but a fundamental value. We carefully source materials that minimize environmental impact while maximizing quality and durability.</p>
+            <div class="sustainability-features">
+                <div class="feature">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Sustainable Materials</h3>
+                    <p>Ethical sourcing and eco-friendly fabrics</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-recycle"></i>
+                    <h3>Zero Waste Design</h3>
+                    <p>Minimizing fabric waste through innovative cutting techniques</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-hands-helping"></i>
+                    <h3>Ethical Production</h3>
+                    <p>Fair labor practices and artisan partnerships</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>WISH<span>LUXE</span></h2>
+                <p>Redefining Elegance</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="collections.html">Collections</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="about-us.html">Our Team</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Connect</h3>
+                    <ul class="social-links">
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fab fa-pinterest"></i> Pinterest</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Fashion Avenue, Paris</p>
+                        <p><i class="fas fa-phone"></i> +33 1 23 45 67 89</p>
+                        <p><i class="fas fa-envelope"></i> info@wishluxe.com</p>
+                    </address>
+                </div>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Newsletter</h3>
+                <p>Subscribe to receive updates on new collections and exclusive events.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© <span id="current-year"></span> WISHLUXE. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+    <script src="../js/collections.js"></script>
+</body>
+</html>

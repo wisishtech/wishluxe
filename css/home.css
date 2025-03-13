@@ -1,0 +1,342 @@
+/* 
+ * WISHLUXE Fashion House Website
+ * Home Page Stylesheet
+ * 
+ * This stylesheet contains styles specific to the homepage of the WISHLUXE website.
+ */
+
+/* ---------- HERO SECTION STYLES ---------- */
+.hero {
+    height: 80vh;
+    background-image: url('../images/home.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.hero-content {
+    text-align: center;
+    color: var(--light-text);
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: 0 var(--spacing-lg);
+}
+
+.hero-content h2 {
+    font-size: 3.5rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-lg);
+}
+
+/* ---------- FEATURED COLLECTIONS STYLES ---------- */
+.featured {
+    padding: var(--spacing-xl) var(--spacing-lg);
+}
+
+.collection-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.collection-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.collection-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.collection-image img {
+    transition: transform 0.5s ease;
+}
+
+.collection-item:hover .collection-image img {
+    transform: scale(1.05);
+}
+
+.collection-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: var(--spacing-lg);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    color: var(--light-text);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.collection-overlay h3 {
+    margin-bottom: var(--spacing-md);
+}
+
+/* ---------- ABOUT SECTION STYLES ---------- */
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+    align-items: center;
+    padding: var(--spacing-xl) var(--spacing-lg);
+    background-color: var(--light-bg);
+}
+
+.about-content {
+    padding: var(--spacing-lg);
+}
+
+.about-image {
+    overflow: hidden;
+}
+
+.about-image img {
+    transition: transform 0.5s ease;
+}
+
+.about:hover .about-image img {
+    transform: scale(1.05);
+}
+
+/* ---------- EVENTS PREVIEW STYLES ---------- */
+.events-preview {
+    padding: var(--spacing-xl) var(--spacing-lg);
+}
+
+.event-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+}
+
+.event-card {
+    display: flex;
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.event-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 80px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: var(--spacing-md);
+}
+
+.event-date .day {
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.event-date .month {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.event-details {
+    padding: var(--spacing-md);
+    flex-grow: 1;
+}
+
+.event-details h3 {
+    margin-bottom: var(--spacing-sm);
+}
+
+.location {
+    font-size: 0.9rem;
+    color: var(--accent-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.events-link {
+    text-align: center;
+    margin-top: var(--spacing-lg);
+}
+
+/* ---------- NEWSLETTER STYLES (IMPROVED) ---------- */
+.newsletter {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    padding: var(--spacing-xl) var(--spacing-lg);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.newsletter::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/newsletter.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.newsletter-content {
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.newsletter-content h2 {
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-md);
+    font-size: 2.2rem;
+}
+
+.newsletter-content p {
+    margin-bottom: var(--spacing-lg);
+    font-size: 1.1rem;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.newsletter-form .form-group {
+    position: relative;
+}
+
+.newsletter-form label {
+    position: absolute;
+    left: var(--spacing-sm);
+    top: 0;
+    transform: translateY(-50%);
+    background-color: var(--primary-color);
+    padding: 0 var(--spacing-xs);
+    font-size: 0.8rem;
+    color: var(--secondary-color);
+}
+
+.newsletter-form input {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    padding: 1rem;
+    color: var(--light-text);
+    transition: all 0.3s ease;
+}
+
+.newsletter-form input:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+}
+
+.newsletter-form button {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: none;
+    border-radius: 4px;
+    padding: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.newsletter-form button:hover {
+    background-color: #e5c158;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#subscription-message {
+    margin-top: var(--spacing-md);
+    font-weight: 500;
+    color: var(--secondary-color);
+    background-color: rgba(212, 175, 55, 0.1);
+    padding: var(--spacing-md);
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#subscription-message.visible {
+    opacity: 1;
+}
+
+/* Responsive styles for home page */
+@media (max-width: 1024px) {
+    .hero-content h2 {
+        font-size: 3rem;
+    }
+    
+    .about {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+    
+    .event-card {
+        flex-direction: column;
+    }
+    
+    .event-date {
+        width: 100%;
+        min-width: auto;
+        padding: var(--spacing-sm);
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    
+    .event-date .day {
+        margin-right: var(--spacing-xs);
+    }
+    
+    .newsletter-form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+    
+    .collection-grid {
+        grid-template-columns: 1fr;
+    }
+}

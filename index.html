@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WISHLUXE | Home</title>
+    <!-- Favicon -->
+     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- Page-specific CSS -->
+    <link rel="stylesheet" href="./css/home.css">
+    <!-- Font Awesome for icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-..." crossorigin="anonymous">
+</head>
+<body>
+    <!-- Modernized Header Section -->
+    <header role="banner">
+        <div class="header-container">
+            <a href="../index.html">
+                <div class="logo" aria-label="WISHLUXE Home">
+                    <h1>WISH<span>LUXE</span></h1>
+                    <p class="tagline">Redefining Elegance</p>
+                </div>
+            </a>
+            
+            <nav role="navigation" aria-label="Main navigation">
+                <ul>
+                    <!-- <li><a href="index.html" class="active">Home</a></li> -->
+                    <li><a href="./html/collections.html">Collections</a></li>
+                    <li><a href="./html/events.html">Events</a></li>
+                    <li><a href="./html/about-us.html">About Us</a></li>
+                    <li><a href="./html/contact.html">Contact</a></li>
+                </ul>
+                <!-- Close icon for mobile menu -->
+                <div class="close-icon">
+                    <i class="fas fa-times"></i>
+                </div>
+            </nav>
+            
+            <div class="header-right">
+                <div class="search-container">
+                    <button class="search-toggle" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <form class="search-form" action="#" method="get">
+                        <input type="text" placeholder="Search..." aria-label="Search">
+                    </form>
+                </div>
+                
+                <div class="header-icons">
+                    <a href="#" class="header-icon" aria-label="Wishlist">
+                        <i class="far fa-heart"></i>
+                    </a>
+                    <a href="#" class="header-icon" aria-label="Shopping bag">
+                        <i class="fas fa-shopping-bag"></i>
+                    </a>
+                    <a href="#" class="header-icon" aria-label="My account">
+                        <i class="far fa-user"></i>
+                    </a>
+                </div>
+                
+                <div class="hamburger-menu" aria-label="Toggle menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Overlay for mobile menu -->
+    <div class="overlay"></div>
+
+    <!-- Marquee Element -->
+    <div class="marquee-container">
+        <div class="marquee">
+            <span>UPCOMING: Spring Collection Launch - May 15th • Paris Fashion Week Showcase - June 3rd • Limited Edition Accessories - Now Available • VIP Member Exclusive Preview - April 28th</span>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>The New Era of Fashion</h2>
+            <p>Exquisite designs that transcend trends and embrace timeless elegance</p>
+            <a href="./html/collections.html" class="btn primary">Discover Collection</a>
+        </div>
+    </section>
+
+    <!-- Featured Collections -->
+    <section class="featured">
+        <h2 class="section-title">Featured Collections</h2>
+        <div class="collection-grid">
+            <div class="collection-item">
+                <div class="collection-image">
+                    <img src="./images/image-1.png" loading="lazy" alt="Summer Elegance Collection">
+                    <div class="collection-overlay">
+                        <h3>Summer Elegance</h3>
+                        <a href="./html/collections.html" class="btn small">View Collection</a>
+                    </div>
+                </div>
+            </div>
+            <div class="collection-item">
+                <div class="collection-image">
+                    <img src="./images/image-2.png" loading="lazy" alt="Urban Sophisticate Collection">
+                    <div class="collection-overlay">
+                        <h3>Urban Sophisticate</h3>
+                        <a href="./html/collections.html" class="btn small">View Collection</a>
+                    </div>
+                </div>
+            </div>
+            <div class="collection-item">
+                <div class="collection-image">
+                    <img src="./images/image-5.png" loading="lazy" alt="Evening Glamour Collection">
+                    <div class="collection-overlay">
+                        <h3>Evening Glamour</h3>
+                        <a href="./html/collections.html" class="btn small">View Collection</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="about-content">
+            <h2 class="section-title">Our Story</h2>
+            <p>Founded in 2022, WISHLUXE embodies the fusion of traditional craftsmanship and contemporary vision. Our designs celebrate individuality, sustainability, and timeless elegance.</p>
+            <p>Each piece is meticulously crafted using ethically sourced materials and innovative techniques to ensure exceptional quality and minimal environmental impact.</p>
+            <a href="./html/about-us.html" class="btn outlined">Meet Our Team</a>
+        </div>
+        <div class="about-image">
+            <img src="./images/image-3.png" loading="lazy" alt="WISHLUXE Atelier">
+        </div>
+    </section>
+
+    <!-- Upcoming Events Preview -->
+    <section class="events-preview">
+        <h2 class="section-title">Upcoming Events</h2>
+        <div class="event-cards">
+            <div class="event-card">
+                <div class="event-date">
+                    <span class="day">15</span>
+                    <span class="month">May</span>
+                </div>
+                <div class="event-details">
+                    <h3>Spring Collection Launch</h3>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> Paris, France</p>
+                    <p>Join us for the exclusive unveiling of our Spring Collection, featuring live music and refreshments.</p>
+                </div>
+            </div>
+            <div class="event-card">
+                <div class="event-date">
+                    <span class="day">03</span>
+                    <span class="month">Jun</span>
+                </div>
+                <div class="event-details">
+                    <h3>Paris Fashion Week Showcase</h3>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> Grand Palais, Paris</p>
+                    <p>Experience our latest creations on the runway at this prestigious fashion event.</p>
+                </div>
+            </div>
+        </div>
+        <div class="events-link">
+            <a href="./html/events.html" class="btn">View All Events</a>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <!-- <section class="newsletter">
+        <div class="newsletter-content">
+            <h2>Stay Inspired</h2>
+            <p>Subscribe to receive exclusive updates, early access to new collections, and invitations to private events.</p>
+            <form id="newsletter-form" class="newsletter-form">
+                <div class="form-group">
+                    <label for="email">Your Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+            <p id="subscription-message" class="hidden">Thank you for subscribing!</p>
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>WISH<span>LUXE</span></h2>
+                <p>Redefining Elegance</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="./html/collections.html">Collections</a></li>
+                        <li><a href="./html/events.html">Events</a></li>
+                        <li><a href="./html/about-us.html">Our Team</a></li>
+                        <li><a href="./html/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Connect</h3>
+                    <ul class="social-links" aria-label="Social media links">
+                        <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i> Pinterest</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Fashion Avenue, Paris</p>
+                        <p><i class="fas fa-phone"></i> +33 1 23 45 67 89</p>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:info@wishluxe.com">info@wishluxe.com</a></p>
+                    </address>
+                </div>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Newsletter</h3>
+                <p>Subscribe to receive updates on new collections and exclusive events.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© <span id="current-year"></span> WISHLUXE. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./js/main.js"></script>
+    <script src="./js/home.js"></script>
+</body>
+</html>
