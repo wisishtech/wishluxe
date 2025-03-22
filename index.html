@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WISHLUXE | Home</title>
     <!-- Favicon -->
-     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <!-- Core CSS -->
     <link rel="stylesheet" href="./css/styles.css">
     <!-- Page-specific CSS -->
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-..." crossorigin="anonymous">
 </head>
 <body>
-    <!-- Modernized Header Section -->
+    <!-- Updated Header Section from event.html with index.html link structure -->
     <header role="banner">
         <div class="header-container">
             <a href="./index.html">
@@ -27,7 +27,7 @@
             
             <nav role="navigation" aria-label="Main navigation">
                 <ul>
-                    <!-- <li><a href="index.html" class="active">Home</a></li> -->
+                    <!-- <li><a href="./index.html" class="active">Home</a></li> -->
                     <li><a href="./html/collections.html">Collections</a></li>
                     <li><a href="./html/events.html">Events</a></li>
                     <li><a href="./html/about-us.html">About Us</a></li>
@@ -44,7 +44,7 @@
                     <button class="search-toggle" aria-label="Search">
                         <i class="fas fa-search"></i>
                     </button>
-                    <form class="search-form" action="#" method="get">
+                    <form class="search-form" id="event-subscribe-form" action="#" method="get">
                         <input type="text" placeholder="Search..." aria-label="Search">
                     </form>
                 </div>
@@ -168,22 +168,6 @@
             <a href="./html/events.html" class="btn">View All Events</a>
         </div>
     </section>
-
-    <!-- Newsletter Signup -->
-    <!-- <section class="newsletter">
-        <div class="newsletter-content">
-            <h2>Stay Inspired</h2>
-            <p>Subscribe to receive exclusive updates, early access to new collections, and invitations to private events.</p>
-            <form id="newsletter-form" class="newsletter-form">
-                <div class="form-group">
-                    <label for="email">Your Email Address</label>
-                    <input type="email" id="email" placeholder="Enter your email" required>
-                </div>
-                <button type="submit" class="btn">Subscribe</button>
-            </form>
-            <p id="subscription-message" class="hidden">Thank you for subscribing!</p>
-        </div>
-    </section> -->
 
     <!-- Footer -->
     <footer role="contentinfo">
