@@ -1,0 +1,119 @@
+# Compiled source #
+######################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Node.js #
+###########
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn-debug.log
+.pnp/
+.pnp.js
+.yarn/
+.yarnrc
+.npm/
+
+# Python #
+##########
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+venv/
+ENV/
+.env
+.venv
+env.bak/
+venv.bak/
+.pytest_cache/
+
+# JetBrains IDEs #
+#################
+.idea/
+*.iml
+*.iws
+*.ipr
+.idea_modules/
+out/
+
+# VS Code #
+###########
+.vscode/
+*.code-workspace
+.history/
+
+# Temporary files #
+##################
+*~
+*.swp
+*.swo
+.tmp
+.temp
+
+# Build output #
+###############
+/dist
+/tmp
+/out-tsc
+
+# Coverage directory used by tools like istanbul
+coverage/
+.nyc_output
+
+# Local env files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
