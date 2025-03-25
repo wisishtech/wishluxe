@@ -53,76 +53,32 @@ function setupProductModal() {
     
     if (!modal || !quickViewBtns.length) return;
     
-    // Product data (in a real application, this would come from a database)
-    const productData = {
-        'silk-palazzo': {
-            title: 'Silk Palazzo Pants',
-            price: '$850',
-            description: 'Fluid silhouette with wide-leg design in premium silk. Features a high waist with concealed side zip closure and pleated front detail. Available in multiple colorways.'
-        },
-        'leather-tote': {
-            title: 'Leather Tote Bag',
-            price: '$1,450',
-            description: 'Structured leather tote with signature hardware. Crafted from premium Italian leather with a suede interior lining and multiple compartments for organization.'
-        },
-        'silk-scarf': {
-            title: 'Silk Scarf',
-            price: '$380',
-            description: 'Hand-printed silk with artist collaboration motif. Each scarf is made from the finest silk and features a unique print created in partnership with contemporary artists.'
-        },
-        'statement-earrings': {
-            title: 'Statement Earrings',
-            price: '$520',
-            description: 'Artisan-crafted metal with semi-precious stones. These bold earrings combine traditional metalworking techniques with modern design aesthetics.'
-        },
-        'leather-belt': {
-            title: 'Leather Belt',
-            price: '$490',
-            description: 'Italian calfskin with distinctive buckle detail. The perfect finishing touch to any outfit, featuring our signature hardware and meticulous craftsmanship.'
-        },
-        'structured-blazer': {
-            title: 'Structured Blazer',
-            price: '$1,200',
-            description: 'Tailored wool blend with distinctive shoulder silhouette. Features notched lapels, front button closure, and signature lining. A versatile piece for both formal and casual styling.'
-        },
-        'cashmere-sweater': {
-            title: 'Cashmere Sweater',
-            price: '$890',
-            description: 'Luxurious oversized cashmere with ribbed details. Features dropped shoulders and a relaxed fit for ultimate comfort. Sourced from sustainable cashmere producers.'
-        },
-        'pleated-skirt': {
-            title: 'Pleated Midi Skirt',
-            price: '$720',
-            description: 'Elegant pleated design in lightweight sustainable fabric. Features an elastic waistband for comfort and fluid movement. Perfect for day-to-night transitions.'
-        },
-        'evening-gown': {
-            title: 'Embellished Evening Gown',
-            price: '$5,800',
-            description: 'Hand-beaded silk with dramatic train and draped back. Each bead is carefully applied by expert artisans, requiring over 200 hours of craftsmanship. A true masterpiece of couture.'
-        },
-        'cocktail-dress': {
-            title: 'Sculptural Cocktail Dress',
-            price: '$3,200',
-            description: 'Architectural silhouette with precision craftsmanship. Features innovative construction techniques that create a dramatic yet wearable statement piece.'
-        },
-        'bridal': {
-            title: 'Custom Bridal Ensemble',
-            price: 'Price Upon Request',
-            description: 'Bespoke bridal creation with hand-embroidered details. Each design is uniquely created for the bride, involving multiple fittings and consultations to ensure a perfect match to individual style and vision.'
-        }
-    };
-    
     // Open modal when quick view button is clicked
     quickViewBtns.forEach(btn => {
         btn.addEventListener('click', function() {
             const productId = this.getAttribute('data-product');
-            const product = productData[productId];
             
-            if (product) {
-                // Update modal content with product data
-                document.getElementById('modal-title').textContent = product.title;
-                document.getElementById('modal-price').textContent = product.price;
-                document.getElementById('modal-description').textContent = product.description;
+            // Find the parent product item to fetch data from HTML
+            const productItem = this.closest('.product-item');
+            
+            if (productItem) {
+                // Extract product data directly from the HTML
+                const title = productItem.querySelector('h3').textContent;
+                const price = productItem.querySelector('.product-price').textContent;
+                const description = productItem.querySelector('.product-description').textContent;
+                const imageSrc = productItem.querySelector('.product-image img').getAttribute('src');
+                
+                // Update modal content with product data from HTML
+                document.getElementById('modal-title').textContent = title;
+                document.getElementById('modal-price').textContent = price;
+                document.getElementById('modal-description').textContent = description;
+                
+                // Update modal image if element exists
+                const modalImage = document.getElementById('modal-image');
+                if (modalImage) {
+                    modalImage.setAttribute('src', imageSrc);
+                    modalImage.setAttribute('alt', title);
+                }
                 
                 // Show modal
                 modal.style.display = 'flex';
@@ -132,6 +88,26 @@ function setupProductModal() {
     
     // Initialize modal close functionality
     setupModal('quick-view-modal', '.quick-view-btn', '.close-modal');
+}
+
+// Modal setup functionality
+function setupModal(modalId, triggerSelector, closeSelector) {
+    const modal = document.getElementById(modalId);
+    const closeBtn = modal ? modal.querySelector(closeSelector) : null;
+    
+    if (!modal || !closeBtn) return;
+    
+    // Close modal when clicking the close button
+    closeBtn.addEventListener('click', function() {
+        modal.style.display = 'none';
+    });
+    
+    // Close modal when clicking outside of modal content
+    window.addEventListener('click', function(event) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
 }
 
 // Size selection functionality
