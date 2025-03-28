@@ -2,6 +2,17 @@
 
 This guide explains how to implement the reorganized files and improvements to the WISHLUXE fashion website.
 
+## Group Members
+
+- Group 69
+1. Ezechukwu Samuel Chiemezu
+2. Michael Olanrewaju
+3. Victor Owoleke
+4. Wisdom Chimezie
+5. Solomon Azowenu
+6. Abimbola Fakorede
+7. Destiny Ejekwuone
+
 ## File Structure
 
 The CSS, HTML and JavaScript files have been reorganized as follows:
